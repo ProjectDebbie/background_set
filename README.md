@@ -14,12 +14,11 @@ This randomly sampled set was created to enable classification and comparative a
 
 ## Versioning
 
-
-For the versions available, see the [tags on this repository](https://github.com/ProjectDebbie/DEBBIE_pipeline/tags). 
+Versions of the background set are labeled with the number of PMIDs they contain. 
 
 ## Authors
 
-* **Javier Corvi** - **Austin McKitrick** - **Osnat Hakimi**
+**Osnat Hakimi**
 
 ## License
 
