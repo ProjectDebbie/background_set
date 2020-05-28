@@ -1,30 +1,21 @@
-# debbie-pipeline 
+# Background set
 
-The debbie automated pipeline retrieves biomaterials abstracts from PubMed, annotates them using multiple lexical assets (and in particular DEB (The Device, Experimental scaffolds and medical Device ontology) and MESH, and deposit the annotated abstracts in a a NoSQL database. The database search page is: debbie.bsc.es/search/. 
+The backgroud set is a list of PMIDs representing non-biomaterials abstracts for the purpose of relevance classification. 
 
 ## Description 
 
-The pipeline orchestrates the execution of the following components (some of them are in separate repositories of DEBBIE):
-1. Periodic abstract retrieval from PubMed
-2. Standardization of the abstract text
-3. Binary classification (relevant/Non-relevant to biomaterials) using an SVM implementation
-4. Gate-based annotation of the relevant abstracts with terms from the DEB ontology, UNLS semantic types and other manually-selected classes from open ontologies (eg. NPO, NCIT, UBERON) 
-5. Conversion of the resulting gate files to .json and their deposition in the DEBBIE Mongo database
+This randomly sampled set was created to enable classification and comparative analysis of the biomaterials literature against the general literature. To ensure maximal random distribution of the abstracts from the PubMed database, PMIDs were generated as pseudo-random numbers (within the range of PMIDs in the years 1999-2018), using python’s random package (Python Software Foundation, version 3.6, Available at http://www.python.org). These PMIDs were used to retrieve full citations via the PubMed eBot tool, which is one of the educational resources offered by the National Center for Biotechnology Information (NCBI). To ensure the random set does not contain any biomaterials articles, it was also ranked in the MedlineRanker, and the top 200 ranked records were manually scanned, of which 7 records were deemed relevant to the biomaterials set and were therefore removed. Reviews, records with no abstracts, non-english records and records published earlier than 2004 were also excluded.
 
-## Pipeline (Add image in here)
 
-## To Run the pipeline.  Ongoing work 
+## Created With
 
-sh INSTALL.sh
-
-## Built With
-
-* [Docker](https://www.docker.com/) - Docker Containers
-* [Maven](https://maven.apache.org/) - Dependency Management
+* [PubMed eBOT](https://www.ncbi.nlm.nih.gov/Class/PowerTools/eutils/ebot/ebot.cgi) 
+* [Python](http://www.python.org) 
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/ProjectDebbie/DEBBIE_pipeline/tags). 
+
+For the versions available, see the [tags on this repository](https://github.com/ProjectDebbie/DEBBIE_pipeline/tags). 
 
 ## Authors
 
