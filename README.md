@@ -9,7 +9,7 @@ This randomly sampled set was created to enable classification and comparative a
 
 ## Created With
 
-* [PubMed eBOT](https://www.ncbi.nlm.nih.gov/Class/PowerTools/eutils/ebot/ebot.cgi) 
+* [PubMed Ebot](https://www.ncbi.nlm.nih.gov/Class/PowerTools/eutils/ebot/ebot.cgi) 
 * [Python](http://www.python.org)
 * [MedlineRanker](http://cbdm-01.zdv.uni-mainz.de/~jfontain/cms/?page_id=4)
 
@@ -25,6 +25,21 @@ Versions of the background set are labeled with the number of PMIDs they contain
 
 This project is licensed under the GNU GENERAL PUBLIC LICENSE Version 3 - see the [LICENSE](LICENSE) file for details
 
+## Citation
+
+@article{doi:10.1002/adfm.201909910,
+	author = {Hakimi, Osnat and Gelpi, Josep Luis and Krallinger, Martin and Curi, Fabio and Repchevsky, Dmitry and 	Ginebra, Maria-Pau},
+	title = {The Devices, Experimental Scaffolds, and Biomaterials Ontology (DEB): A Tool for Mapping, Annotation, and 	   Analysis of Biomaterials Data},
+	journal = {Advanced Functional Materials},
+	volume = {30},
+	number = {16},
+	pages = {1909910},
+	keywords = {biomaterials, databases, ontology},
+	doi = {10.1002/adfm.201909910},
+	url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/adfm.201909910},
+	eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.201909910},
+	year = {2020}
+}
 
 	
 		
