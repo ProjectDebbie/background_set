@@ -10,7 +10,8 @@ This randomly sampled set was created to enable classification and comparative a
 ## Created With
 
 * [PubMed eBOT](https://www.ncbi.nlm.nih.gov/Class/PowerTools/eutils/ebot/ebot.cgi) 
-* [Python](http://www.python.org) 
+* [Python](http://www.python.org)
+* [MedlineRanker](http://cbdm-01.zdv.uni-mainz.de/~jfontain/cms/?page_id=4)
 
 ## Versioning
 
